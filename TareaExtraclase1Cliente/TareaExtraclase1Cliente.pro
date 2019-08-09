@@ -25,10 +25,12 @@ DEFINES += QT_DEPRECATED_WARNINGS
 CONFIG += c++11
 
 SOURCES += \
+        deserealizador.cpp \
         main.cpp \
         mainwindow.cpp
 
 HEADERS += \
+        deserealizador.h \
         mainwindow.h
 
 FORMS += \
