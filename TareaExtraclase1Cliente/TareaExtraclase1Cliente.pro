@@ -25,16 +25,28 @@ DEFINES += QT_DEPRECATED_WARNINGS
 CONFIG += c++11
 
 SOURCES += \
+        bst.cpp \
         deserealizador.cpp \
+        linkedlist.cpp \
         main.cpp \
-        mainwindow.cpp
+        mainwindow.cpp \
+        popupwindow.cpp \
+        popupwindow2.cpp
 
 HEADERS += \
+        bst.h \
         deserealizador.h \
-        mainwindow.h
+        linkedlist.h \
+        mainwindow.h \
+        popupwindow.h \
+        popupwindow2.h
 
 FORMS += \
-        mainwindow.ui
+        bst.ui \
+        linkedlist.ui \
+        mainwindow.ui \
+        popupwindow.ui \
+        popupwindow2.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

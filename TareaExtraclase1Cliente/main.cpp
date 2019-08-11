@@ -12,6 +12,7 @@
 
 int main(int argc, char *argv[])
 {
+    /*
     int sock = 0, valread;
     struct sockaddr_in serv_addr;
     char *hello = "Hello from client";
@@ -43,6 +44,7 @@ int main(int argc, char *argv[])
     printf("%s\n",buffer );
 
     Deserealizador *deserealizador = new Deserealizador(buffer);
+    */
 
 
     QApplication a(argc, argv);
