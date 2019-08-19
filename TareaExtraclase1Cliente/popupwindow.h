@@ -2,7 +2,7 @@
 #define POPUPWINDOW_H
 
 #include <QDialog>
-#include "QTextEdit"
+#include "QLineEdit"
 namespace Ui {
 class popupwindow;
 }
@@ -13,12 +13,14 @@ class popupwindow : public QDialog
 
 public:
     explicit popupwindow(QWidget *parent = nullptr);
-    bool checkAllInteger(QTextEdit *text);
+    bool checkAllInteger(QLineEdit *text);
     ~popupwindow();
 
 private slots:
     void on_pushButton_2_clicked();
     void on_pushButton_clicked();
+    void on_lineEdit_editingFinished();
+
 private:
     Ui::popupwindow *ui;
 };

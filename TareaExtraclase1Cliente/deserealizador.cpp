@@ -31,3 +31,5 @@ Deserealizador::Deserealizador(char listToParse[]) {
 
 
 }
+
+

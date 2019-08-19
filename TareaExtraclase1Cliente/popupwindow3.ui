@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>popupwindow</class>
- <widget class="QDialog" name="popupwindow">
+ <class>popupwindow3</class>
+ <widget class="QDialog" name="popupwindow3">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>322</width>
-    <height>171</height>
+    <width>355</width>
+    <height>156</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,55 +17,39 @@
    <property name="geometry">
     <rect>
      <x>10</x>
-     <y>20</y>
-     <width>321</width>
-     <height>21</height>
+     <y>10</y>
+     <width>341</width>
+     <height>51</height>
     </rect>
    </property>
    <property name="text">
-    <string>Insert the value you want to add to the front</string>
+    <string>Are you sure you want to delete the first element?</string>
    </property>
   </widget>
   <widget class="QPushButton" name="pushButton">
    <property name="geometry">
     <rect>
-     <x>60</x>
-     <y>130</y>
+     <x>50</x>
+     <y>110</y>
      <width>89</width>
      <height>25</height>
     </rect>
    </property>
-   <property name="minimumSize">
-    <size>
-     <width>89</width>
-     <height>25</height>
-    </size>
-   </property>
    <property name="text">
-    <string>Accept</string>
+    <string>Yes</string>
    </property>
   </widget>
   <widget class="QPushButton" name="pushButton_2">
    <property name="geometry">
     <rect>
-     <x>180</x>
-     <y>130</y>
+     <x>220</x>
+     <y>110</y>
      <width>89</width>
      <height>25</height>
     </rect>
    </property>
    <property name="text">
-    <string>Cancel</string>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="lineEdit">
-   <property name="geometry">
-    <rect>
-     <x>110</x>
-     <y>70</y>
-     <width>113</width>
-     <height>25</height>
-    </rect>
+    <string>No</string>
    </property>
   </widget>
  </widget>

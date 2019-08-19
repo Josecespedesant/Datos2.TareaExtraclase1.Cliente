@@ -2,6 +2,7 @@
 #include "ui_mainwindow.h"
 #include "linkedlist.h"
 #include "bst.h"
+#include "sockets.h"
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -17,9 +18,9 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_pushButton_clicked()
 {
-    linkedlist *linkUi = new linkedlist();
-    linkUi->show();
-    hide();
+   linkedlist *linkUi = new linkedlist();
+   linkUi->show();
+   hide();
 }
 
 void MainWindow::on_pushButton_2_clicked()
