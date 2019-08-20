@@ -6,13 +6,13 @@
 #include <sys/socket.h>
 #include <netinet/in.h>
 #include <netdb.h>
-
 #include <iostream>
+
 Sockets::Sockets()
 {
 
     sock = 0;
-    buffer[1024] = {0};
+    buffer[4096] = {0};
 
     if ((sock = socket(AF_INET, SOCK_STREAM, 0)) < 0)
         {
@@ -31,6 +31,11 @@ Sockets::Sockets()
         printf("\nConnection Failed \n");
     }
 
+}
+
+char* Sockets::getMessage(){
+    read(sock, buffer, 4096);
+    return buffer;
 }
 
 void Sockets::sendMessage(char *mensaje){

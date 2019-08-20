@@ -16,7 +16,7 @@ private:
 public:
     Deserealizador(char listToParse[]);
     void printList();
-
+    vector<int>* getParsedList();
 };
 
 

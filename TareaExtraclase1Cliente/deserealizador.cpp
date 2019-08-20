@@ -32,4 +32,6 @@ Deserealizador::Deserealizador(char listToParse[]) {
 
 }
 
-
+vector<int>* Deserealizador::getParsedList(){
+    return parsedList;
+}

@@ -20,6 +20,7 @@ private:
 public:
     Sockets();
     void sendMessage(char* mensaje);
+    char* getMessage();
 };
 
 #endif // SOCKETS_H

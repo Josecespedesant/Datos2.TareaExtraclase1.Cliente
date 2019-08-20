@@ -4,6 +4,7 @@
 #include "popupwindowbst1.h"
 #include "popupwindowbts2.h"
 
+
 bst::bst(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::bst)

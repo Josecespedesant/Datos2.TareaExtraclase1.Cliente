@@ -5,6 +5,10 @@
 #include "popupwindow2.h"
 #include "popupwindow3.h"
 #include "popupwindow4.h"
+#include "deserealizador.h"
+#include <vector>
+#include "QStringListModel"
+#include "QVector"
 linkedlist::linkedlist(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::linkedlist)
@@ -47,4 +51,11 @@ void linkedlist::on_pushButton_3_clicked()
 {
     popupwindow4 *p = new popupwindow4;
     p->show();
+}
+
+void linkedlist::on_pushButton_6_clicked()
+{
+    Sockets *s = new Sockets;
+    s->sendMessage("p");
+
 }
