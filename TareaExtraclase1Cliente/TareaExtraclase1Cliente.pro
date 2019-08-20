@@ -33,6 +33,9 @@ SOURCES += \
         popupwindow.cpp \
         popupwindow2.cpp \
         popupwindow3.cpp \
+        popupwindow4.cpp \
+        popupwindowbst1.cpp \
+        popupwindowbts2.cpp \
         sockets.cpp
 
 HEADERS += \
@@ -43,6 +46,9 @@ HEADERS += \
         popupwindow.h \
         popupwindow2.h \
         popupwindow3.h \
+        popupwindow4.h \
+        popupwindowbst1.h \
+        popupwindowbts2.h \
         sockets.h
 
 FORMS += \
@@ -51,7 +57,10 @@ FORMS += \
         mainwindow.ui \
         popupwindow.ui \
         popupwindow2.ui \
-        popupwindow3.ui
+        popupwindow3.ui \
+        popupwindow4.ui \
+        popupwindowbst1.ui \
+        popupwindowbts2.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

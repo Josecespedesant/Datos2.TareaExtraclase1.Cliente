@@ -4,6 +4,7 @@
 #include "popupwindow.h"
 #include "popupwindow2.h"
 #include "popupwindow3.h"
+#include "popupwindow4.h"
 linkedlist::linkedlist(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::linkedlist)
@@ -40,4 +41,10 @@ void linkedlist::on_pushButton_2_clicked()
     popupwindow3 *p = new popupwindow3;
     p->show();
 
+}
+
+void linkedlist::on_pushButton_3_clicked()
+{
+    popupwindow4 *p = new popupwindow4;
+    p->show();
 }

@@ -1,61 +1,51 @@
-#include "popupwindow.h"
-#include "ui_popupwindow.h"
-#include "linkedlist.h"
+#include "popupwindow4.h"
+#include "ui_popupwindow4.h"
 #include "sockets.h"
-#include <iostream>
 using namespace std;
 
-
-popupwindow::popupwindow(QWidget *parent) :
+popupwindow4::popupwindow4(QWidget *parent) :
     QDialog(parent),
-    ui(new Ui::popupwindow)
+    ui(new Ui::popupwindow4)
 {
     ui->setupUi(this);
 }
 
-popupwindow::~popupwindow()
+popupwindow4::~popupwindow4()
 {
     delete ui;
 }
 
-void popupwindow::on_pushButton_2_clicked()
+void popupwindow4::on_pushButton_2_clicked()
 {
     hide();
 }
 
 
-void popupwindow::on_pushButton_clicked()
+
+void popupwindow4::on_pushButton_clicked()
 {
     if(!(ui->lineEdit->text().isEmpty()) && checkAllInteger(ui->lineEdit)){
-
         Sockets *s = new Sockets();
-        string data = "i" + ui->lineEdit->text().toStdString();
-
-
+        string data = "g" + ui->lineEdit->text().toStdString();
         char cstr[data.size()+1];
-        memset(cstr,0, sizeof (cstr));
-
-        memcpy(cstr, &data, ui->lineEdit->text().size());
-        cstr[data.size()] = '\0';
-
         strcpy(cstr, data.c_str());
-
-
 
         s->sendMessage(cstr);
 
-
         memset(cstr,0, sizeof (cstr));
+        data = "";
         ui->lineEdit->clear();
         hide();
+        delete(ui);
 
     }else{
         ui->lineEdit->clear();
-        ui->label->setText("Please insert a number you want to add first");
+        ui->label->setText("Please insert the position as an integer");
     }
 }
 
-bool popupwindow::checkAllInteger(QLineEdit *text){
+
+bool popupwindow4::checkAllInteger(QLineEdit *text){
 
     string realtext = text->text().toStdString();
 
@@ -64,3 +54,4 @@ bool popupwindow::checkAllInteger(QLineEdit *text){
        return !realtext.empty() && it == realtext.end();
 
 }
+
