@@ -3,6 +3,10 @@
 
 #include <QDialog>
 
+/*!
+ *Declaración de la clase de la interfaz gráfica de linkedlist
+ */
+
 namespace Ui {
 class linkedlist;
 }

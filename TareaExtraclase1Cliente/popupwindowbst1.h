@@ -4,6 +4,10 @@
 #include <QDialog>
 #include "QLineEdit"
 
+/*!
+ *Declaración de la clase de la interfaz gráfica de popupwindowbst1
+ */
+
 namespace Ui {
 class popupwindowbst1;
 }

@@ -7,6 +7,11 @@
 #include <netinet/in.h>
 #include <netdb.h>
 #include <iostream>
+/*!
+  Basado en:
+  https://www.geeksforgeeks.org/socket-programming-cc/
+ * \brief Sockets::Sockets
+ */
 
 Sockets::Sockets()
 {

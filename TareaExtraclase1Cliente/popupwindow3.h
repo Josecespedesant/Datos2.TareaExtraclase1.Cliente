@@ -3,6 +3,10 @@
 
 #include <QDialog>
 
+/*!
+ *Declaración de la clase de la interfaz gráfica de popupwindow3
+ */
+
 namespace Ui {
 class popupwindow3;
 }

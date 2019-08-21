@@ -4,6 +4,10 @@
 #include <QMainWindow>
 #include "sockets.h"
 
+/*!
+ *Declaración de la clase de la interfaz gráfica de mainwindow
+ */
+
 namespace Ui {
 class MainWindow;
 }
